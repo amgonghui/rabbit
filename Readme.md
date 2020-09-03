@@ -37,7 +37,7 @@
 
 return [
     'connection'        => [
-        'host'     => env('RABBIT_HOST', 'g1-bs-w-v02.dns.guazi.com'),
+        'host'     => env('RABBIT_HOST', 'g1-bs-w-v02.dns.xigua.com'),
         'port'     => env('RABBIT_PORT', 5672),
         'user'     => env('RABBIT_USER', 'guest'),
         'password' => env('RABBIT_PASSWORD', 'guest'),
@@ -68,7 +68,7 @@ return [
              'connection'        => [
                  'host'     => env('RABBIT_HOST_COMMON', '10.216.90.150'),
                  'port'     => env('RABBIT_PORT_COMMON', 5672),
-                 'user'     => env('RABBIT_USER_COMMON', 'guazi_queue'),
+                 'user'     => env('RABBIT_USER_COMMON', 'xigua_queue'),
                  'password' => env('RABBIT_PASSWORD_COMMON', 'ivfaogsFKdAJN3Noyend1zG0wlPbqsKn'),
                  'heartbeat' => 60,//设置为0，则禁用心跳,单位:秒
                  'vhost'    => env('RABBIT_VHOST_COMMON', 'queue'),
