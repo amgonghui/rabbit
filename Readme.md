@@ -1,24 +1,5 @@
 # RabbitMQ 的客户端
 ---
-安装
-----
-1.composer
-```
-{
-    ……
-    "repositories": [
-        {
-            "type": "git",
-            "url": "git@git.guazi-corp.com:framework/rabbit.git"
-        }
-    ],
-    "require": {
-        "videlalvaro/php-amqplib": "2.2.*",
-        "guazi/rabbit": "dev-master"
-    }
-    ……
-}
-```
 用法
 ----
 1.向分发器发送消息
