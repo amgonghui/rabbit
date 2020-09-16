@@ -37,7 +37,7 @@
 
 return [
     'connection'        => [
-        'host'     => env('RABBIT_HOST', 'g1-bs-w-v02.dns.xigua.com'),
+        'host'     => env('RABBIT_HOST', 'localhsot'),
         'port'     => env('RABBIT_PORT', 5672),
         'user'     => env('RABBIT_USER', 'guest'),
         'password' => env('RABBIT_PASSWORD', 'guest'),
@@ -66,10 +66,10 @@ return [
     'services' => [
          'common' => [
              'connection'        => [
-                 'host'     => env('RABBIT_HOST_COMMON', '10.216.90.150'),
+                 'host'     => env('RABBIT_HOST_COMMON', 'localhost'),
                  'port'     => env('RABBIT_PORT_COMMON', 5672),
-                 'user'     => env('RABBIT_USER_COMMON', 'xigua_queue'),
-                 'password' => env('RABBIT_PASSWORD_COMMON', 'ivfaogsFKdAJN3Noyend1zG0wlPbqsKn'),
+                 'user'     => env('RABBIT_USER_COMMON', 'haha'),
+                 'password' => env('RABBIT_PASSWORD_COMMON', 'test'),
                  'heartbeat' => 60,//设置为0，则禁用心跳,单位:秒
                  'vhost'    => env('RABBIT_VHOST_COMMON', 'queue'),
              ],
